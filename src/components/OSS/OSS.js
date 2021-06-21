@@ -21,7 +21,7 @@ import {
 import { OSSProjects } from "../../constants/constants";
 
 export const OSS = () => (
-  <Section nopadding id="projects">
+  <Section nopadding id="oss">
     <SectionDivider />
     <br />
     <SectionTitle>OSS</SectionTitle>

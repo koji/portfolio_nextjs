@@ -17,20 +17,20 @@ import {
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <LinkList>
-        {/* <LinkColumn>
+      {/* <LinkList>
+        <LinkColumn>
           <LinkTitle>call</LinkTitle>
           <LinkItem href=""></LinkItem>
-        </LinkColumn> */}
+        </LinkColumn>
         <LinkColumn>
           <LinkTitle>email</LinkTitle>
           <LinkItem href="">kojikanao503＠gmail.com</LinkItem>
         </LinkColumn>
-      </LinkList>
+      </LinkList> */}
       <SocialIconsContainer>
-        <CompanyContainer>
+        {/* <CompanyContainer>
           <Slogan>test</Slogan>
-        </CompanyContainer>
+        </CompanyContainer> */}
         <SocialContainer>
           <SocialIcons href="">
             <AiFillGithub size="3rem" />
