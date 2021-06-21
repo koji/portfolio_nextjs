@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import { FaRegSmile } from "react-icons/fa";
 
 import {
   Container,
@@ -26,7 +26,7 @@ const Header = () => (
           }}
         >
           {/* ToDo change icon */}
-          <DiCssdeck size="3rem" />
+          <FaRegSmile size="3rem" style={{ paddingRight: "5px" }} />
           <Span>Koji Portfolio</Span>
         </a>
       </Link>
