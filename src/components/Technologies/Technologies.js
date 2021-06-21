@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiCode, DiReact, DiVisualstudio } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -34,23 +34,26 @@ const Technologies = () => (
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
       <ListItem>
-        <DiFirebase size="3rem" />
-        <ListContainer>
-          <ListTitle>Creative coding</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Processing(P5js), openFrameworks, touchDesigner, a little bit Shader
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size="3rem" />
+        <DiCode size="3rem" />
         <ListContainer>
           <ListTitle>Backend</ListTitle>
           <ListParagraph>
             Experience with <br />
             python and nodejs
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      <ListItem>
+        <DiVisualstudio size="3rem" />
+        <ListContainer>
+          <ListTitle>Creative coding</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            Processing(P5js), openFrameworks, touchDesigner, a little bit
+            Shaders
           </ListParagraph>
         </ListContainer>
       </ListItem>

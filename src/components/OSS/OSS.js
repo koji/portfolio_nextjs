@@ -1,0 +1,55 @@
+import React from "react";
+
+import {
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from "./OSSStyles";
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { OSSProjects } from "../../constants/constants";
+
+export const OSS = () => (
+  <Section nopadding id="projects">
+    <SectionDivider />
+    <br />
+    <SectionTitle>OSS</SectionTitle>
+    <GridContainer>
+      {OSSProjects.map(
+        ({ id, image, title, description, tags, link, code }) => (
+          <BlogCard key={id}>
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>stack</TitleContent>
+                <TagList>
+                  {tags.map((t, i) => {
+                    return <Tag key={i}>{t}</Tag>;
+                  })}
+                </TagList>
+              </div>
+              <UtilityList>
+                <ExternalLinks href={link}>link</ExternalLinks>
+                <ExternalLinks href={code}>code</ExternalLinks>
+              </UtilityList>
+            </TitleContent>
+          </BlogCard>
+        )
+      )}
+    </GridContainer>
+  </Section>
+);

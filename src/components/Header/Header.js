@@ -38,6 +38,11 @@ const Header = () => (
         </Link>
       </li>
       <li>
+        <Link href="#oss">
+          <NavLink>open source</NavLink>
+        </Link>
+      </li>
+      <li>
         <Link href="#tech">
           <NavLink>tech stack</NavLink>
         </Link>

@@ -75,7 +75,7 @@ export const Timeline = () => {
         University, he has worked on my projects with TypeScript, React, and
         Python. He has also contributed to open-source projects on GitHub.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, i) => (
             <CarouselMobileScrollNode
@@ -143,7 +143,7 @@ export const Timeline = () => {
             </CarouselButton>
           );
         })}
-      </CarouselButtons>
+      </CarouselButtons> */}
       {/* <SectionDivider /> */}
     </Section>
   );

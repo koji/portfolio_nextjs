@@ -6,19 +6,18 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { LeftSection, ColorSpan } from "./HeroStyles";
 
 export const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Welcome To <br /> My Personal Portfolio
+          <ColorSpan>Thank you for visiting</ColorSpan> <br /> My Portfolio
         </SectionTitle>
         <SectionText>
-          The purpose of JavaScript Mastery is to help aspiring and established
-          developers to take their development skills to the next level and
-          build awesome apps.
+          This is Koji Kanao's portfolio site which is built by nextjs.
+          <br /> He is a software engineer in NYC currently.
         </SectionText>
         <Button onClick={() => (window.location = "https://github.com/koji")}>
           Learn More
