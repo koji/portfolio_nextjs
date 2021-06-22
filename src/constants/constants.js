@@ -165,7 +165,7 @@ export const OSSProjects = [
     description:
       "nes-components is a react-component with nes.css. This is published as a npm package.",
     image: "/images/nes-components.webp",
-    tags: ["react", "typescript", "storybook", "bit.dev", "Netlify"],
+    tags: ["react", "typescript", "storybook", "bit.dev", "NKoji tlify"],
     link: "https://nes-components.netlify.com/",
     code: "https://github.com/koji/react-nes-components",
     id: 4,
@@ -188,14 +188,4 @@ export const OSSProjects = [
     code: "https://github.com/processing/p5.js-web-editor/releases/tag/v1.2.0",
     id: 6,
   },
-];
-
-export const TimeLineData = [
-  { year: 2010, text: "Started my journey" },
-  { year: 2013, text: "Worked as a freelance developer" },
-  { year: 2016, text: "Founded JavaScript Mastery" },
-  { year: 2018, text: "Shared my projects with the world" },
-  { year: 2019, text: "Started my own platform" },
-  { year: 2020, text: "Started my own platform" },
-  { year: 2021, text: "Started my own platform" },
 ];
