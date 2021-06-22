@@ -1,6 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+  AiOutlineBold,
+  AiOutlineMedium,
+} from "react-icons/ai";
 import { FaRegSmile } from "react-icons/fa";
 
 import {
@@ -54,14 +61,23 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="">
+      <SocialIcons href="https://github.com/koji/">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="">
+      <SocialIcons href="https://twitter.com/kojikanao_nyc">
+        <AiFillTwitterSquare size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://www.linkedin.com/in/kojikanao/">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
       <SocialIcons href="">
         <AiFillInstagram size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://dev.to/kojikanao">
+        <AiOutlineBold size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://koji-kanao.medium.com/">
+        <AiOutlineMedium size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>

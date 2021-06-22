@@ -14,7 +14,7 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 
-const Technologies = () => (
+export const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <br />
@@ -60,5 +60,3 @@ const Technologies = () => (
     </List>
   </Section>
 );
-
-export default Technologies;

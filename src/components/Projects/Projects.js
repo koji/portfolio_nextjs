@@ -20,7 +20,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
-const Projects = () => (
+export const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <br />
@@ -53,5 +53,3 @@ const Projects = () => (
     </GridContainer>
   </Section>
 );
-
-export default Projects;
