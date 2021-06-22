@@ -30,7 +30,7 @@ const Technologies = () => (
           <ListTitle>Frontend</ListTitle>
           <ListParagraph>
             Experience with <br />
-            reactjs and typescript
+            reactjs, typescript, redux, webpack, and rollupjs
           </ListParagraph>
         </ListContainer>
       </ListItem>

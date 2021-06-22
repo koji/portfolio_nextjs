@@ -43,8 +43,8 @@ export const OSS = () => (
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={link}>link</ExternalLinks>
-                <ExternalLinks href={code}>code</ExternalLinks>
+                {link && <ExternalLinks href={link}>link</ExternalLinks>}
+                {code && <ExternalLinks href={code}>code</ExternalLinks>}
               </UtilityList>
             </TitleContent>
           </BlogCard>
