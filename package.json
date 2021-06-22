@@ -17,6 +17,9 @@
     "three": "^0.129.0"
   },
   "resolutions": {
-    "webpack": "5.39.0"
+    "webpack": "^5.40.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.40.0"
   }
 }
