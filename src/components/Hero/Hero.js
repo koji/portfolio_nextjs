@@ -16,8 +16,10 @@ export const Hero = (props) => (
           <ColorSpan>Thank you for visiting</ColorSpan> <br /> My Portfolio
         </SectionTitle>
         <SectionText>
-          This is Koji Kanao's portfolio site which is built by nextjs.
+          This is Koji Kanao's portfolio site. This is built by nextjs.
           <br /> He is a software engineer in NYC currently.
+          <br /> He develops a passion for learning and he will never cease to
+          grow.
         </SectionText>
         <Button onClick={() => (window.location = "https://github.com/koji")}>
           Learn More
