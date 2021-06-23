@@ -29,6 +29,7 @@ export const BlogCard = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
+  background: #00c48d;
 `;
 export const TitleContent = styled.div`
   text-align: center;
@@ -86,14 +87,15 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
+  color: #000;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  /* background: #6b3030; */
+  background: #b0c6fb;
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: #801414;
+    background: #7a90c2;
   }
 `;
 
