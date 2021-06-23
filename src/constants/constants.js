@@ -165,7 +165,7 @@ export const OSSProjects = [
     description:
       "nes-components is a react-component with nes.css. This is published as a npm package.",
     image: "/images/nes-components.webp",
-    tags: ["react", "typescript", "storybook", "bit.dev", "NKoji tlify"],
+    tags: ["react", "typescript", "storybook", "Netlify"],
     link: "https://nes-components.netlify.com/",
     code: "https://github.com/koji/react-nes-components",
     id: 4,
