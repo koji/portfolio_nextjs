@@ -117,6 +117,15 @@ export const projects = [
     code: "",
     id: 11,
   },
+  {
+    title: "Cryptocurrency info site",
+    description: "Cryptocurrency information site that uses CoinGecko API.",
+    image: "/images/crypto-info.webp",
+    tags: ["nextjs", "coingecko api", "Vercel"],
+    link: "https://cryptoinfo-checker.vercel.app/",
+    code: "",
+    id: 12,
+  },
 ];
 
 export const OSSProjects = [
