@@ -122,8 +122,8 @@ export const projects = [
     description: "Cryptocurrency information site that uses CoinGecko API.",
     image: "/images/crypto-info.webp",
     tags: ["nextjs", "coingecko api", "Vercel"],
-    link: "https://cryptoinfo-checker.vercel.app/",
-    code: "",
+    link: "https://one-five.one",
+    code: "https://github.com/koji/cryptocurrency-info-checker",
     id: 12,
   },
 ];
