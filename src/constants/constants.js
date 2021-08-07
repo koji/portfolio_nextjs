@@ -126,6 +126,16 @@ export const projects = [
     code: "https://github.com/koji/cryptocurrency-info-checker",
     id: 12,
   },
+  {
+    title: "Frontend Tools",
+    description:
+      "A collection of tools for front-end developers. Offer useful information for web development!",
+    image: "/images/fe-tools.webp",
+    tags: ["nextjs", "Contentful", "Vercel"],
+    link: "https://fetools.vercel.app/",
+    code: "https://github.com/koji/frontend-tools",
+    id: 13,
+  },
 ];
 
 export const OSSProjects = [
