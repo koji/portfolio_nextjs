@@ -59,6 +59,11 @@ const Header = () => (
           <NavLink>about</NavLink>
         </Link>
       </li>
+      <li>
+        <Link href="https://dev.to/kojikanao">
+          <NavLink>blog</NavLink>
+        </Link>
+      </li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/koji/">

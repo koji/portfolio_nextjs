@@ -51,9 +51,9 @@ export const Footer = () => {
           <SocialIcons href="https://www.instagram.com/k20code/">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://dev.to/kojikanao">
+          {/* <SocialIcons href="https://dev.to/kojikanao">
             <AiOutlineBold size="3rem" />
-          </SocialIcons>
+          </SocialIcons> */}
           <SocialIcons href="https://koji-kanao.medium.com/">
             <AiOutlineMedium size="3rem" />
           </SocialIcons>
