@@ -61,7 +61,7 @@ const Header = () => (
       </li>
       <li>
         <Link href="https://dev.to/kojikanao">
-          <NavLink>blog</NavLink>
+          <a>blog</a>
         </Link>
       </li>
     </Div2>
