@@ -136,6 +136,26 @@ export const projects = [
     code: "https://github.com/koji/frontend-tools",
     id: 13,
   },
+  {
+    title: "Frontend Tools",
+    description:
+      "A collection of tools for front-end developers. Offer useful information for web development!",
+    image: "/images/fe-tools.webp",
+    tags: ["nextjs", "Contentful", "Vercel"],
+    link: "https://fetools.vercel.app/",
+    code: "https://github.com/koji/frontend-tools",
+    id: 14,
+  },
+  {
+    title: "github label manager",
+    description:
+      "Simple CLI tool to create/delete labels with GitHub Labels API.",
+    image: "/images/GithubLabelManager.webp",
+    tags: ["nodejs", "typescript"],
+    link: "https://levelup.gitconnected.com/create-github-labels-from-terminal-158d4868fabhttps://levelup.gitconnected.com/create-github-labels-from-terminal-158d4868fab",
+    code: "https://github.com/koji/github-label-managerhttps://github.com/koji/github-label-manager",
+    id: 15,
+  },
 ];
 
 export const OSSProjects = [
