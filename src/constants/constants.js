@@ -146,6 +146,15 @@ export const projects = [
     code: "https://github.com/koji/github-label-managerhttps://github.com/koji/github-label-manager",
     id: 14,
   },
+  {
+    title: "complexity with colors",
+    description: "This is an experimental project to try an NFT on opensea.io",
+    image: "/images/complexity_with.webp",
+    tags: ["glsl", "shader"],
+    link: "https://opensea.io/collection/complexity-with-colors",
+    code: "",
+    id: 15,
+  },
 ];
 
 export const OSSProjects = [
