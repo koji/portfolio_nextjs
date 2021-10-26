@@ -155,6 +155,24 @@ export const projects = [
     code: "",
     id: 15,
   },
+  {
+    title: "crypto-board",
+    description: "Cryptocurrency information with related news",
+    image: "/images/crypto-board.webp",
+    tags: ["react", "typescript", "redux toolkit"],
+    link: "https://crypto-board.netlify.app/",
+    code: "",
+    id: 16,
+  },
+    {
+    title: "next-mint",
+    description: "next-mint allows users to mint an NFT easily without any cost",
+    image: "/images/NextMint.webp",
+    tags: ["nextjs", "typescript", "NFTPortAPI"],
+    link: "https://next-mint.vercel.app/",
+    code: "https://github.com/koji/next-mint",
+    id: 17,
+  }
 ];
 
 export const OSSProjects = [
