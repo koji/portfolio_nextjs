@@ -61,22 +61,46 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/koji/">
+      <SocialIcons
+        href="https://github.com/koji/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://twitter.com/kojikanao_nyc">
+      <SocialIcons
+        href="https://twitter.com/kojikanao_nyc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillTwitterSquare size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/kojikanao/">
+      <SocialIcons
+        href="https://www.linkedin.com/in/kojikanao/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/k20code/">
+      <SocialIcons
+        href="https://www.instagram.com/k20code/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiFillInstagram size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://dev.to/kojikanao">
+      <SocialIcons
+        href="https://dev.to/kojikanao"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiOutlineBold size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://koji-kanao.medium.com/">
+      <SocialIcons
+        href="https://koji-kanao.medium.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AiOutlineMedium size="3rem" />
       </SocialIcons>
     </Div3>
