@@ -6,10 +6,10 @@ export const Section = styled.section`
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
   margin: 0 auto;
   max-width: 1040px;
-  /* box-sizing: content-box; */
+  box-sizing: content-box;
   position: relative;
   overflow: hidden;
-  /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
