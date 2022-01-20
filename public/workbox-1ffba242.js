@@ -36,7 +36,7 @@ define("./workbox-1ffba242.js",['exports'], (function (exports) { 'use strict';
           // Safari doesn't print all console.groupCollapsed() arguments:
           // https://bugs.webkit.org/show_bug.cgi?id=182754
           if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-            
+            console[method](...args);
             return;
           }
         }
@@ -44,7 +44,7 @@ define("./workbox-1ffba242.js",['exports'], (function (exports) { 'use strict';
         const styles = [`background: ${methodToColorMap[method]}`, `border-radius: 0.5em`, `color: white`, `font-weight: bold`, `padding: 2px 0.5em`]; // When in a group, the workbox prefix is not displayed.
 
         const logPrefix = inGroup ? [] : ['%cworkbox', styles.join(';')];
-        
+        console[method](...logPrefix, ...args);
 
         if (method === 'groupCollapsed') {
           inGroup = true;
@@ -2252,7 +2252,7 @@ define("./workbox-1ffba242.js",['exports'], (function (exports) { 'use strict';
           event,
           request
         });
-        let response;
+        let response = undefined;
 
         try {
           response = await this._handle(request, handler); // The "official" Strategy subclasses all throw this error automatically,
@@ -2658,7 +2658,7 @@ define("./workbox-1ffba242.js",['exports'], (function (exports) { 'use strict';
           });
         }
 
-        let error;
+        let error = undefined;
         let response;
 
         try {

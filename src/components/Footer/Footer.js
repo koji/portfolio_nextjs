@@ -42,13 +42,13 @@ export const Footer = () => {
           <SocialIcons href="https://github.com/koji/">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://twitter.com/kojikanao_nyc">
+          <SocialIcons href="https://twitter.com/0xkoji">
             <AiFillTwitterSquare size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.linkedin.com/in/kojikanao/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/k20code/">
+          <SocialIcons href="https://www.instagram.com/0xsleepyforest.888">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
           {/* <SocialIcons href="https://dev.to/kojikanao">
