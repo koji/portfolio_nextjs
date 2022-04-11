@@ -98,7 +98,7 @@ export const Header = () => {
           <AiFillGithub size="3rem" />
         </SocialIcons>
         <SocialIcons
-          href="https://twitter.com/kojikanao_nyc"
+          href="https://twitter.com/0xkoji"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -112,14 +112,14 @@ export const Header = () => {
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
         <SocialIcons
-          href="https://www.instagram.com/k20code/"
+          href="https://www.instagram.com/0xsleepyforest.888/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <AiFillInstagram size="3rem" />
         </SocialIcons>
         <SocialIcons
-          href="https://dev.to/kojikanao"
+          href="https://dev.to/0xkoji"
           target="_blank"
           rel="noopener noreferrer"
         >
