@@ -8,7 +8,7 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, ColorSpan } from "./HeroStyles";
 
-export const Hero = (props) => (
+export const Hero = (props: any) => (
   <>
     <Section row nopadding>
       <LeftSection>
