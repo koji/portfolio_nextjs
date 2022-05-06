@@ -8,7 +8,7 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, ColorSpan } from "./HeroStyles";
 
-export const Hero = (props: any) => (
+export const Hero = () => (
   <>
     <Section row nopadding>
       <LeftSection>
@@ -18,10 +18,8 @@ export const Hero = (props: any) => (
         <SectionText style={{ color: "#ffffff" }}>
           This is <b>Koji Kanao</b>'s portfolio site.
           <br /> He is a software eng in <i>Brooklyn</i>.
-          {/* <br />
-          He develops a passion for learning and he will never cease to grow. */}
         </SectionText>
-        <Button onClick={() => (window.location = "https://github.com/koji")}>
+        <Button onClick={() => (window.location.href = "https://github.com/koji")}>
           Learn More
         </Button>
       </LeftSection>
