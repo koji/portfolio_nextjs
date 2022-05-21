@@ -2,7 +2,15 @@ import React from "react";
 
 import { ButtonBack, ButtonFront } from "./index";
 
-const Button = (props: any) => (
+interface Props {
+  alt?: any;
+  form?: boolean;
+  disabled?: boolean;
+  children: React.ReactNode;
+  onClick: () => void;
+}
+
+const Button = (props: Props) => (
   <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>
     {props.children}
     <ButtonFront

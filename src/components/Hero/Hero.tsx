@@ -8,6 +8,9 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, ColorSpan } from "./HeroStyles";
 
+const introText = `This is Koji Kanao's portfolio site.
+          He is an software eng in Brooklyn. Currently, he is working on a robotics startup company.`;
+
 export const Hero = () => (
   <>
     <Section row nopadding>
@@ -15,11 +18,10 @@ export const Hero = () => (
         <SectionTitle main center>
           <ColorSpan>Thank you for visiting</ColorSpan> <br /> My Portfolio
         </SectionTitle>
-        <SectionText style={{ color: "#ffffff" }}>
-          This is <b>Koji Kanao</b>'s portfolio site.
-          <br /> He is a software eng in <i>Brooklyn</i>.
-        </SectionText>
-        <Button onClick={() => (window.location.href = "https://github.com/koji")}>
+        <SectionText style={{ color: "#ffffff" }}>{introText}</SectionText>
+        <Button
+          onClick={() => (window.location.href = "https://github.com/koji")}
+        >
           Learn More
         </Button>
       </LeftSection>
