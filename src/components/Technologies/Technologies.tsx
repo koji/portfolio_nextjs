@@ -20,8 +20,8 @@ export const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range of technologies in web dev, creative coding, and
-      hardware.
+      I have worked with a range of technologies in web dev, creative coding,
+      and hardware.
     </SectionText>
     <List>
       <ListItem>

@@ -23,7 +23,7 @@ import {
 } from "./HeaderStyles";
 
 export const Header = () => {
-  const [vantaEffect, setVantaEffect] = useState(0);
+  const [vantaEffect, setVantaEffect] = useState<any>(0);
   const vantaRef = useRef(null);
 
   useEffect(() => {

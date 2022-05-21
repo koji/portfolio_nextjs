@@ -11,4 +11,4 @@ import {
   DropDownTextContainer,
 } from "./NavDropDown";
 
-export const NavDropDown = (props) => <div>NavDropDown</div>;
+export const NavDropDown = (props: any) => <div>NavDropDown</div>;
