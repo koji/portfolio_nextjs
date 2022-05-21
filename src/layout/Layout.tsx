@@ -1,9 +1,13 @@
-import React from "react";
+import { ReactNode } from "react";
 import { Footer } from "@components/Footer/Footer";
 import { Header } from "@components/Header/Header";
 import { Container } from "./LayoutStyles";
 
-export const Layout = ({ children }: any) => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export const Layout = ({ children }: LayoutProps) => {
   return (
     <Container>
       <Header />
