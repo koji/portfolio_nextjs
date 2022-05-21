@@ -3,7 +3,7 @@ import React from "react";
 import { ButtonBack, ButtonFront } from "./index";
 
 interface Props {
-  alt?: any;
+  alt?: boolean;
   form?: boolean;
   disabled?: boolean;
   children: React.ReactNode;
