@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterSquare,
   AiOutlineBold,
@@ -110,13 +109,6 @@ export const Header = () => {
           rel="noopener noreferrer"
         >
           <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons
-          href="https://www.instagram.com/0xsleepyforest.888/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillInstagram size="3rem" />
         </SocialIcons>
         <SocialIcons
           href="https://dev.to/0xkoji"
