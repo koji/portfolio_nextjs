@@ -24,22 +24,9 @@ import {
 export const Footer = () => {
   return (
     <FooterWrapper>
-      {/* <LinkList>
-        <LinkColumn>
-          <LinkTitle>call</LinkTitle>
-          <LinkItem href=""></LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>email</LinkTitle>
-          <LinkItem href="">kojikanao503＠gmail.com</LinkItem>
-        </LinkColumn>
-      </LinkList> */}
       <SocialIconsContainer>
-        {/* <CompanyContainer>
-          <Slogan>test</Slogan>
-        </CompanyContainer> */}
         <SocialContainer>
-          <SocialIcons href="https://github.com/koji/">
+          <SocialIcons href="https://github.com/koji/" target="_blank" rel="noopener noreferrer">
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://twitter.com/0xkoji">
@@ -48,12 +35,12 @@ export const Footer = () => {
           <SocialIcons href="https://www.linkedin.com/in/kojikanao/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/0xsleepyforest.888">
-            <AiFillInstagram size="3rem" />
-          </SocialIcons>
-          {/* <SocialIcons href="https://dev.to/kojikanao">
+          <SocialIcons href="https://baxin.pages.dev/">
             <AiOutlineBold size="3rem" />
-          </SocialIcons> */}
+          </SocialIcons>
+          <SocialIcons href="https://dev.to/kojikanao">
+            <AiOutlineBold size="3rem" />
+          </SocialIcons>
           <SocialIcons href="https://koji-kanao.medium.com/">
             <AiOutlineMedium size="3rem" />
           </SocialIcons>

@@ -8,11 +8,10 @@ import {
 
 export const About = () => {
   return (
-    <Section id="about">
+    <Section>
       <SectionDivider />
       <br />
-      <SectionTitle>About Koji</SectionTitle>
-      {/* <SectionDivider /> */}
+      <SectionTitle main>About Koji</SectionTitle>
       <SectionText>
         Koji is a software engineer with a passion to build challenging products
         for improving people’s lives. Since I graduated from New York

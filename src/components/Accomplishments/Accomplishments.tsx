@@ -19,10 +19,12 @@ const Accomplishments = () => (
     <SectionTitle>My Accomplishments</SectionTitle>
     <Boxes>
       {data.map((card, i) => (
-        <Box key={i}>
-          <BoxNum>{`${card.number}+`}</BoxNum>
-          <BoxText>{card.text}</BoxText>
-        </Box>
+        <React.Fragment key={card.number}>
+          <Box>
+            <BoxNum>{`${card.number}+`}</BoxNum>
+            <BoxText>{card.text}</BoxText>
+          </Box>
+        </React.Fragment>
       ))}
     </Boxes>
     <SectionDivider />
