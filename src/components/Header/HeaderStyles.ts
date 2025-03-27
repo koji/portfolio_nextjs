@@ -113,10 +113,10 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 `
 
 // Social Icons
-export const SocialIcons = styled.a.attrs((props) => ({
+export const SocialIcons = styled.a.attrs(() => ({
   target: '_blank',
   rel: 'noopener noreferrer',
-}))`
+}))<React.AnchorHTMLAttributes<HTMLAnchorElement>>`
   transition: 0.3s ease;
   color: white;
   border-radius: 50px;

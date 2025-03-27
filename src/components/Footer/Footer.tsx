@@ -26,7 +26,7 @@ export const Footer = () => {
     <FooterWrapper>
       <SocialIconsContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/koji/">
+          <SocialIcons href="https://github.com/koji/" target="_blank" rel="noopener noreferrer">
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://twitter.com/0xkoji">

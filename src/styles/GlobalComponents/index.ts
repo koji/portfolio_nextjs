@@ -5,6 +5,12 @@ interface SectionProps {
   row?: boolean
   nopadding?: boolean
   id?: string
+  theme: {
+    breakpoints: {
+      sm: string
+      md: string
+    }
+  }
 }
 
 export const Section = styled.section`
@@ -18,13 +24,14 @@ export const Section = styled.section`
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
-  @media ${(props: any) => props.theme.breakpoints.md} {
+  @media ${(props: SectionProps) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
   }
 
-  @media ${(props: any) => props.theme.breakpoints.sm} {
-    padding: ${(props: any) => (props.nopadding ? '0' : '16px 16px 0')};
+  @media ${(props: SectionProps) => props.theme.breakpoints.sm} {
+    padding: ${(props: SectionProps) =>
+      props.nopadding ? '0' : '16px 16px 0'};
 
     width: calc(100vw - 32px);
     flex-direction: column;
@@ -35,7 +42,13 @@ interface SectionTitleProps {
   main?: boolean
   center?: boolean
 }
-export const SectionTitle = styled.h2<SectionTitleProps>`
+// export const SectionTitle = styled.h2<SectionTitleProps>`
+export const SectionTitle = styled.h2<
+  {
+    main?: boolean
+    center?: boolean
+  } & React.HTMLAttributes<HTMLHeadingElement>
+>`
   font-weight: 800;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
@@ -72,7 +85,16 @@ export const SectionTitle = styled.h2<SectionTitleProps>`
   }
 `
 
-export const SectionText = styled.p`
+interface SectionTextProps {
+  theme?: {
+    breakpoints?: {
+      sm?: string
+      md?: string
+    }
+  }
+}
+
+export const SectionText = styled.p<SectionTextProps>`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
@@ -81,14 +103,14 @@ export const SectionText = styled.p`
   /* color: rgba(25, 25, 25, 0.75); */
   color: #787878;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme?.breakpoints?.md || ''} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme?.breakpoints?.sm || ''} {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
