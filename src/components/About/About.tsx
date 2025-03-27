@@ -11,7 +11,7 @@ export const About = () => {
     <Section>
       <SectionDivider />
       <br />
-      <SectionTitle main>About Koji</SectionTitle>
+      <SectionTitle>About Koji</SectionTitle>
       <SectionText>
         Koji is a software engineer with a passion to build challenging products
         for improving people’s lives. Since I graduated from New York

@@ -14,6 +14,7 @@ const Home = () => {
       <Section grid>
         <Hero />
       </Section>
+      
       <Projects />
       <OSS />
       <Technologies />

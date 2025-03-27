@@ -19,7 +19,8 @@ export const Section = styled.section.withConfig({
 })`
   display: ${(props: SectionProps) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props: SectionProps) => (props.row ? 'row' : 'column')};
-  padding: ${(props: SectionProps) => (props.nopadding ? '0' : '32px 48px 0')};
+  padding: ${(props: SectionProps) =>
+    props.nopadding ? '0' : '32px 48px 120px'};
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
@@ -28,7 +29,7 @@ export const Section = styled.section.withConfig({
   grid-template-columns: 1fr 1fr;
 
   @media ${(props: SectionProps) => props.theme.breakpoints.md} {
-    padding: 24px 48px 0;
+    padding: 24px 48px 120px;
     flex-direction: column;
   }
 
@@ -105,7 +106,7 @@ export const SectionText = styled.p.withConfig<SectionTextProps>({
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: #787878;
+  color: #fff;
 
   @media ${(props) => props.theme?.breakpoints?.md || ''} {
     max-width: 670px;
@@ -222,7 +223,11 @@ interface ButtonBackProps {
   disabled?: boolean
 }
 export const ButtonBack = styled.div.withConfig<ButtonBackProps>({
-  shouldForwardProp: (prop) => isntStyleProp(prop) && prop !== 'alt' && prop !== 'form' && prop !== 'disabled',
+  shouldForwardProp: (prop) =>
+    isntStyleProp(prop) &&
+    prop !== 'alt' &&
+    prop !== 'form' &&
+    prop !== 'disabled',
 })`
   width: ${(props) => (props.alt ? '150px' : '262px')};
   height: ${(props) => (props.alt ? '52px' : '64px')};

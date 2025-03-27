@@ -5,7 +5,7 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
+// import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, ColorSpan } from "./HeroStyles";
 
 const introText = `This is Koji Kanao's portfolio site.
