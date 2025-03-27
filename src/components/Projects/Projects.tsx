@@ -7,11 +7,11 @@ import {
   GridContainer,
   HeaderThree,
   Hr,
+  Img,
   Tag,
   TagList,
   TitleContent,
   UtilityList,
-  Img,
 } from "./ProjectsStyles";
 import {
   Section,

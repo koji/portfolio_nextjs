@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { isntStyleProp } from 'src/styles/style-props'
 
 interface SectionProps {
   grid?: boolean
@@ -13,7 +14,9 @@ interface SectionProps {
   }
 }
 
-export const Section = styled.section`
+export const Section = styled.section.withConfig({
+  shouldForwardProp: isntStyleProp,
+})`
   display: ${(props: SectionProps) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props: SectionProps) => (props.row ? 'row' : 'column')};
   padding: ${(props: SectionProps) => (props.nopadding ? '0' : '32px 48px 0')};

@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import { isntStyleProp } from 'src/styles/style-props'
 
-export const Img = styled.img`
+export const Img = styled.img.withConfig({
+  shouldForwardProp: isntStyleProp,
+})`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -21,7 +24,9 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `
-export const BlogCard = styled.div`
+export const BlogCard = styled.div.withConfig({
+  shouldForwardProp: isntStyleProp,
+})`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -42,13 +47,13 @@ interface HeaderThreeProps {
   title?: boolean
 }
 
-export const HeaderThree = styled.h3<HeaderThreeProps>`
+export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   /* color: #9cc9e3; */
   color: #000000;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+  font-size: 2rem;
 `
 
 export const Hr = styled.hr`
@@ -90,10 +95,9 @@ export const UtilityList = styled.ul`
   margin: 2.5rem 0;
 `
 
-export const ExternalLinks = styled.a.attrs((props) => ({
-  target: '_blank',
-  rel: 'noopener noreferrer',
-}))`
+export const ExternalLinks = styled.a.withConfig({
+  shouldForwardProp: isntStyleProp,
+})`
   color: #000;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
@@ -110,7 +114,9 @@ export const TagList = styled.ul`
   justify-content: space-around;
   padding: 2rem;
 `
-export const Tag = styled.li`
+export const Tag = styled.li.withConfig({
+  shouldForwardProp: isntStyleProp,
+})`
   /* color: #d8bfbf; */
   color: #000;
   font-size: 1.5rem;

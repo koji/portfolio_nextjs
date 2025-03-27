@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       next:
         specifier: 12.1.6
         version: 12.1.6(@babel/core@7.26.10)(react-dom@18.1.0(react@18.1.0))(react@18.1.0)
@@ -2486,7 +2489,7 @@ snapshots:
       eslint: 8.14.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 2.7.1(eslint-plugin-import@2.31.0(eslint@8.14.0))(eslint@8.14.0)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1)(eslint@8.14.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.14.0))(eslint@8.14.0))(eslint@8.14.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.14.0)
       eslint-plugin-react: 7.37.4(eslint@8.14.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.14.0)
@@ -2509,7 +2512,7 @@ snapshots:
     dependencies:
       debug: 4.4.0(supports-color@5.5.0)
       eslint: 8.14.0
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1)(eslint@8.14.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.14.0))(eslint@8.14.0))(eslint@8.14.0)
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.10
@@ -2528,7 +2531,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1)(eslint@8.14.0):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.14.0)(typescript@4.6.4))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.31.0(eslint@8.14.0))(eslint@8.14.0))(eslint@8.14.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
