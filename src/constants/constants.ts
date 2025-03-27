@@ -178,7 +178,7 @@ export const projects = [
     description: "This is a plugin for ESLint that helps you avoid using margin-related properties in your code.",
     image: "/images/NextMint.webp",
     tags: ["eslint", "typescript", "vite", "vitest"],
-    link: "https://www.npmjs.com/package/eslint-plugin-no-margins",
+    link: "",
     code: "https://www.npmjs.com/package/eslint-plugin-no-margins",
     id: 18,
   }
