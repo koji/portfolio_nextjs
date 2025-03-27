@@ -18,7 +18,7 @@ export const Hero = () => (
         <SectionTitle main center>
           <ColorSpan>Thank you for visiting</ColorSpan> <br /> My Portfolio
         </SectionTitle>
-        <SectionText style={{ color: "#ffffff" }}>{introText}</SectionText>
+        <SectionText>{introText}</SectionText>
         <Button
           onClick={() => (window.location.href = "https://github.com/koji")}
         >

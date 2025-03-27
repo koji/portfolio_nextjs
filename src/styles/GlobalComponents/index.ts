@@ -97,13 +97,14 @@ interface SectionTextProps {
   }
 }
 
-export const SectionText = styled.p<SectionTextProps>`
+export const SectionText = styled.p.withConfig<SectionTextProps>({
+  shouldForwardProp: isntStyleProp,
+})`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  /* color: rgba(25, 25, 25, 0.75); */
   color: #787878;
 
   @media ${(props) => props.theme?.breakpoints?.md || ''} {
