@@ -11,7 +11,7 @@ export const About = () => {
     <Section id="about">
       <SectionDivider />
       <br />
-      <SectionTitle>About Koji</SectionTitle>
+      <SectionTitle main>About Koji</SectionTitle>
       {/* <SectionDivider /> */}
       <SectionText>
         Koji is a software engineer with a passion to build challenging products

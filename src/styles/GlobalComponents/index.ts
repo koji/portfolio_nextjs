@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface SectionProps {
-  grid?: boolean;
-  row?: boolean;
-  nopadding?: boolean;
-  // id?: string;
+  grid?: boolean
+  row?: boolean
+  nopadding?: boolean
+  id?: string
 }
 
 export const Section = styled.section`
-  display: ${(props: SectionProps) => (props.grid ? "grid" : "flex")};
-  flex-direction: ${(props: SectionProps) => (props.row ? "row" : "column")};
-  padding: ${(props: SectionProps) => (props.nopadding ? "0" : "32px 48px 0")};
+  display: ${(props: SectionProps) => (props.grid ? 'grid' : 'flex')};
+  flex-direction: ${(props: SectionProps) => (props.row ? 'row' : 'column')};
+  padding: ${(props: SectionProps) => (props.nopadding ? '0' : '32px 48px 0')};
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
@@ -24,21 +24,21 @@ export const Section = styled.section`
   }
 
   @media ${(props: any) => props.theme.breakpoints.sm} {
-    padding: ${(props: any) => (props.nopadding ? "0" : "16px 16px 0")};
+    padding: ${(props: any) => (props.nopadding ? '0' : '16px 16px 0')};
 
     width: calc(100vw - 32px);
     flex-direction: column;
   }
-`;
+`
 
 interface SectionTitleProps {
-  main?: boolean;
-  center?: boolean;
+  main?: boolean
+  center?: boolean
 }
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled.h2<SectionTitleProps>`
   font-weight: 800;
-  font-size: ${(props: SectionTitleProps) => (props.main ? "65px" : "56px")};
-  line-height: ${(props: SectionTitleProps) => (props.main ? "72px" : "56px")};
+  font-size: ${(props) => (props.main ? '65px' : '56px')};
+  line-height: ${(props) => (props.main ? '72px' : '56px')};
   width: max-content;
   max-width: 100%;
   background: linear-gradient(
@@ -49,28 +49,28 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+  padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props: SectionTitleProps) => (props.main ? "56px" : "48px")};
+    font-size: ${(props: SectionTitleProps) => (props.main ? '56px' : '48px')};
     line-height: ${(props: SectionTitleProps) =>
-      props.main ? "56px" : "48px"};
+      props.main ? '56px' : '48px'};
     margin-bottom: 12px;
     padding: ${(props: SectionTitleProps) =>
-      props.main ? "40px 0 12px" : "0"};
+      props.main ? '40px 0 12px' : '0'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props: SectionTitleProps) => (props.main ? "28px" : "32px")};
+    font-size: ${(props: SectionTitleProps) => (props.main ? '28px' : '32px')};
     line-height: ${(props: SectionTitleProps) =>
-      props.main ? "32px" : "40px"};
+      props.main ? '32px' : '40px'};
     margin-bottom: 8px;
-    padding: ${(props: SectionTitleProps) => (props.main ? "16px 0 8px" : "0")};
+    padding: ${(props: SectionTitleProps) => (props.main ? '16px 0 8px' : '0')};
     max-width: 100%;
   }
-`;
+`
 
 export const SectionText = styled.p`
   max-width: 800px;
@@ -93,11 +93,11 @@ export const SectionText = styled.p`
     line-height: 24px;
     padding-bottom: 16px;
   }
-`;
+`
 
 interface SectionDividerProps {
-  divider?: boolean;
-  colorAlt?: boolean;
+  divider?: boolean
+  colorAlt?: boolean
 }
 export const SectionDivider = styled.div`
   width: 64px;
@@ -106,10 +106,10 @@ export const SectionDivider = styled.div`
   background-color: #fff;
   background: ${(props: SectionDividerProps) =>
     props.colorAlt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+      ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
+      : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-  margin: ${(props) => (props.divider ? "4rem 0" : "")};
+  margin: ${(props: SectionDividerProps) => (props.divider ? '4rem 0' : '')};
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;
@@ -120,7 +120,8 @@ export const SectionDivider = styled.div`
     width: 32px;
     height: 2px;
   }
-`;
+`
+
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;
@@ -138,7 +139,7 @@ export const SectionSubText = styled.p`
     font-size: 14px;
     line-height: 22px;
   }
-`;
+`
 export const SecondaryBtn = styled.button`
   color: #fff;
   background: none;
@@ -188,54 +189,54 @@ export const SecondaryBtn = styled.button`
     font-size: 14px;
     line-height: 16px;
   }
-`;
+`
 interface ButtonBackProps {
-  alt?: boolean;
-  form?: boolean;
-  disabled?: boolean;
+  alt?: boolean
+  form?: boolean
+  disabled?: boolean
 }
-export const ButtonBack = styled.div`
-  width: ${(props: ButtonBackProps) => (props.alt ? "150px" : "262px")};
-  height: ${(props) => (props.alt ? "52px" : "64px")};
+export const ButtonBack = styled.div<ButtonBackProps>`
+  width: ${(props) => (props.alt ? '150px' : '262px')};
+  height: ${(props) => (props.alt ? '52px' : '64px')};
   border-radius: 50px;
-  font-size: ${(props) => (props.alt ? "20px" : "24px")};
+  font-size: ${(props) => (props.alt ? '20px' : '24px')};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${(props) => (props.alt || props.form ? "0" : "0 0 80px")};
+  margin: ${(props) => (props.alt || props.form ? '0' : '0 0 80px')};
   color: #fff;
   background: ${(props) =>
     props.alt
-      ? "linear-gradient(270deg, #ff622e 0%, #B133FF 100%)"
-      : "linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)"};
+      ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
+      : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
   overflow: hidden;
-  opacity: ${(props) => (props.disabled ? ".5" : "1")};
+  opacity: ${(props) => (props.disabled ? '.5' : '1')};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: ${(props) => (props.alt ? "150px" : "184px")};
-    height: ${(props) => (props.alt ? "52px" : "48px")};
-    font-size: ${(props) => (props.alt ? "20px" : "16px")};
-    margin-bottom: ${(props) => (props.alt ? "0" : "64px")};
+    width: ${(props) => (props.alt ? '150px' : '184px')};
+    height: ${(props) => (props.alt ? '52px' : '48px')};
+    font-size: ${(props) => (props.alt ? '20px' : '16px')};
+    margin-bottom: ${(props) => (props.alt ? '0' : '64px')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     height: 32px;
     font-size: 14px;
-    margin-bottom: ${(props) => (props.alt ? "0" : "32px")};
+    margin-bottom: ${(props) => (props.alt ? '0' : '32px')};
   }
-`;
+`
 
 interface ButtonFrontProps {
-  alt?: boolean;
-  disabled?: boolean;
-  onClick: () => void;
+  alt?: boolean
+  disabled?: boolean
+  onClick: () => void
 }
-export const ButtonFront = styled.button`
+export const ButtonFront = styled.button<ButtonFrontProps>`
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -247,19 +248,19 @@ export const ButtonFront = styled.button`
   height: 100%;
   background: ${(props: ButtonFrontProps) =>
     props.alt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
-  opacity: ${(props) => (props.disabled ? ".5" : "1")};
+      ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
+      : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  opacity: ${(props) => (props.disabled ? '.5' : '1')};
   transition: 0.4s ease;
-  font-size: ${(props) => (props.alt ? "20px" : "24px")};
+  font-size: ${(props) => (props.alt ? '20px' : '24px')};
   font-weight: 600;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: ${(props) =>
     props.disabled
-      ? "inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)"
-      : "none"};
+      ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)'
+      : 'none'};
 
   &:hover {
     opacity: 0;
@@ -281,16 +282,16 @@ export const ButtonFront = styled.button`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.alt ? "20px" : "16px")};
+    font-size: ${(props) => (props.alt ? '20px' : '16px')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 14px;
   }
-`;
+`
 
 export const LinkContainer = styled.div`
-  margin-left: ${(large) => (large ? "24px" : "16px")};
+  margin-left: ${(large) => (large ? '24px' : '16px')};
   transition: 0.3s ease;
   justify-content: center;
   border-radius: 50px;
@@ -303,22 +304,22 @@ export const LinkContainer = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    margin-left: ${(large) => (large ? "16px" : "8px")};
+    margin-left: ${(large) => (large ? '16px' : '8px')};
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: ${(large) => (large ? "0" : "8px")};
+    margin-left: ${(large) => (large ? '0' : '8px')};
   }
-`;
+`
 
 export const LinkIconImg = styled.div`
   display: flex;
-  height: ${(large) => (large ? "32px" : "24px")};
+  height: ${(large) => (large ? '32px' : '24px')};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    height: ${(nav) => (nav ? "16px" : "24px")};
+    height: ${(nav) => (nav ? '16px' : '24px')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: ${(large) => (large ? "32px" : "16px")};
+    height: ${(large) => (large ? '32px' : '16px')};
   }
-`;
+`
