@@ -174,26 +174,6 @@ export const projects = [
     code: 'https://github.com/koji/next-mint',
     id: 17,
   },
-  {
-    title: 'ichigyou',
-    description:
-      'ichigyo(1行) is a collection of one-liner functions in typescript',
-    image: '/images/ichigyou.webp',
-    tags: ['typescript', 'vite', 'vitest'],
-    link: 'https://koji.github.io/ichigyou/index.html',
-    code: 'https://github.com/koji/ichigyou',
-    id: 18,
-  },
-  {
-    title: 'eslint-plugin-no-margins',
-    description:
-      'This is a plugin for ESLint that helps you avoid using margin-related properties in your code.',
-    image: '/images/eslint-plugin-no-margins.webp',
-    tags: ['eslint', 'typescript', 'vite', 'vitest'],
-    link: 'https://www.npmjs.com/package/eslint-plugin-no-margins',
-    code: 'https://github.com/koji/eslint-plugin-no-margins',
-    id: 19,
-  },
 ]
 
 export const OSSProjects = [
@@ -264,5 +244,25 @@ export const OSSProjects = [
     link: 'https://editor.p5js.org/',
     code: 'https://github.com/processing/p5.js-web-editor/releases/tag/v1.2.0',
     id: 6,
+  },
+  {
+    title: 'ichigyou',
+    description:
+      'ichigyo(1行) is a collection of one-liner functions in typescript',
+    image: '/images/ichigyou.webp',
+    tags: ['typescript', 'vite', 'vitest'],
+    link: 'https://koji.github.io/ichigyou/index.html',
+    code: 'https://github.com/koji/ichigyou',
+    id: 7,
+  },
+  {
+    title: 'eslint-plugin-no-margins',
+    description:
+      'This is a plugin for ESLint that helps you avoid using margin-related properties in your code.',
+    image: '/images/eslint-plugin-no-margins.webp',
+    tags: ['eslint', 'typescript', 'vite', 'vitest'],
+    link: 'https://www.npmjs.com/package/eslint-plugin-no-margins',
+    code: 'https://github.com/koji/eslint-plugin-no-margins',
+    id: 8,
   },
 ]

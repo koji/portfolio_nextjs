@@ -26,7 +26,7 @@ export const OSS = () => (
     <br />
     <SectionTitle>OSS</SectionTitle>
     <GridContainer>
-      {OSSProjects.map(
+      {OSSProjects.sort((a, b) => b.id - a.id).map(
         ({ id, image, title, description, tags, link, code }) => (
           <BlogCard key={id}>
             <Img src={image} />
