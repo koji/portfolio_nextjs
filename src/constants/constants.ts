@@ -172,6 +172,15 @@ export const projects = [
     link: "https://next-mint.vercel.app/",
     code: "https://github.com/koji/next-mint",
     id: 17,
+  },
+  {
+    title: "eslint-plugin-no-margins",
+    description: "This is a plugin for ESLint that helps you avoid using margin-related properties in your code.",
+    image: "/images/NextMint.webp",
+    tags: ["eslint", "typescript", "vite", "vitest"],
+    link: "https://www.npmjs.com/package/eslint-plugin-no-margins",
+    code: "https://www.npmjs.com/package/eslint-plugin-no-margins",
+    id: 18,
   }
 ];
 
@@ -181,7 +190,7 @@ export const OSSProjects = [
     description:
       "easyGAN is a CLI tool which can train images and generates images with DCGAN.",
     image: "/images/easygan.webp",
-    tags: ["python", "keras", ""],
+    tags: ["python", "keras"],
     link: "https://easygan.netlify.app/",
     code: "",
     id: 0,
