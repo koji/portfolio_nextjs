@@ -221,7 +221,9 @@ interface ButtonBackProps {
   form?: boolean
   disabled?: boolean
 }
-export const ButtonBack = styled.div<ButtonBackProps>`
+export const ButtonBack = styled.div.withConfig<ButtonBackProps>({
+  shouldForwardProp: (prop) => isntStyleProp(prop) && prop !== 'alt' && prop !== 'form' && prop !== 'disabled',
+})`
   width: ${(props) => (props.alt ? '150px' : '262px')};
   height: ${(props) => (props.alt ? '52px' : '64px')};
   border-radius: 50px;
@@ -262,7 +264,9 @@ interface ButtonFrontProps {
   disabled?: boolean
   onClick: () => void
 }
-export const ButtonFront = styled.button<ButtonFrontProps>`
+export const ButtonFront = styled.button.withConfig<ButtonFrontProps>({
+  shouldForwardProp: isntStyleProp,
+})`
   border: none;
   border-radius: 50px;
   color: #fff;

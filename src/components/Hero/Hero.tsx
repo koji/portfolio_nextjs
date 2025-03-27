@@ -19,11 +19,11 @@ export const Hero = () => (
           <ColorSpan>Thank you for visiting</ColorSpan> <br /> My Portfolio
         </SectionTitle>
         <SectionText>{introText}</SectionText>
-        <Button
+        {/* <Button
           onClick={() => (window.location.href = "https://github.com/koji")}
         >
           Learn More
-        </Button>
+        </Button> */}
       </LeftSection>
     </Section>
   </>

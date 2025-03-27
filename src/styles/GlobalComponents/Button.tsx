@@ -11,16 +11,15 @@ interface Props {
 }
 
 const Button = (props: Props) => (
-  <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>
-    {props.children}
-    <ButtonFront
-      alt={props.alt}
-      onClick={props.onClick}
-      disabled={props.disabled}
-    >
-      {props.children}
-    </ButtonFront>
-  </ButtonBack>
+  <button></button>
+  // <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>
+  //   {props.children}
+  //   <ButtonFront
+  //     alt={props.alt}
+  //     onClick={props.onClick}
+  //     disabled={props.disabled}
+  //   />
+  // </ButtonBack>
 );
 
 export default Button;
